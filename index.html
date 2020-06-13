@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <hr />
+    <p>console.log</p>
+    <pre style="font-family: 'Courier New', Courier, monospace;">
+App.js
+[useEffect1]          useEffect has no depnedency.            counter.value: 0
+[useEffect2]          useEffect has [] depnedency.            counter.value: 0
+[useEffect3]          useEffect has counter.dummy depnedency. counter.value: 0
+ -------- clicked --------
+[useEffect1 callback] useEffect has no depnedency.            counter.value: 0
+[useEffect3 callback] useEffect has counter.dummy depnedency. counter.value: 0
+[useEffect1]          useEffect has no depnedency.            counter.value: 1
+[useEffect3]          useEffect has counter.dummy depnedency. counter.value: 1
+ -------- clicked --------
+[useEffect1 callback] useEffect has no depnedency.            counter.value: 1
+[useEffect1]          useEffect has no depnedency.            counter.value: 2
+ -------- clicked --------
+[useEffect1 callback] useEffect has no depnedency.            counter.value: 2
+[useEffect1]          useEffect has no depnedency.            counter.value: 3
+ -------- clicked --------
+[useEffect1 callback] useEffect has no depnedency.            counter.value: 3
+[useEffect3 callback] useEffect has counter.dummy depnedency. counter.value: 1  <--
+[useEffect1]          useEffect has no depnedency.            counter.value: 4
+[useEffect3]          useEffect has counter.dummy depnedency. counter.value: 4
+ -------- clicked --------
+[useEffect1 callback] useEffect has no depnedency.            counter.value: 4
+[useEffect1]          useEffect has no depnedency.            counter.value: 5</pre
+    >
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
