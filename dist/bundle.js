@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8110e82b887c1e787ffa";
+/******/ 	var hotCurrentHash = "91ea878c7f54321ab458";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -29463,6 +29463,10 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
   heading: heading
 }), document.getElementById('app'));
 console.log('App.js');
+var unmountBtn = document.getElementById('unmount');
+unmountBtn.addEventListener('click', function () {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.unmountComponentAtNode(document.getElementById('app'));
+});
 module.hot.accept();
 
 /***/ })
